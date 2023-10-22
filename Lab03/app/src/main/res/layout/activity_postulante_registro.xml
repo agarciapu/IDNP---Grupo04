@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/FondoFormulario"
+    tools:context=".Activity_PostulanteRegistro">
+    <TextView
+        android:id="@+id/Titulo"
+        android:layout_width="374dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/DniEdit"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="FORMULARIO PARA NUEVOS ESTUDIANTES EPIS"
+        android:textColor="@color/TextFormulario"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="96dp"
+        android:layout_height="38dp"
+        android:layout_above="@+id/ApellidoMaternoText"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="58dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="28dp"
+        android:layout_toStartOf="@+id/DniEdit"
+        android:text="Dni :"
+        android:textColor="@color/TextFormulario" />
+
+    <EditText
+        android:id="@+id/DniEdit"
+        android:layout_width="203dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ApellidosEdit"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="34dp"
+        android:background="@drawable/edittext"
+        android:backgroundTint="@color/TextFormulario"
+        android:contentDescription="Campo Dni"/>
+
+    <TextView
+        android:id="@+id/ApellidoMaternoText"
+        android:layout_width="89dp"
+        android:layout_height="33dp"
+        android:layout_above="@+id/NombresText"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="29dp"
+        android:layout_toStartOf="@+id/ApellidosEdit"
+        android:text="Apellidos : "
+        android:textColor="@color/TextFormulario" />
+
+    <EditText
+        android:id="@+id/ApellidosEdit"
+        android:layout_width="203dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/NombresEdit"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="49dp"
+        android:background="@drawable/edittext"
+        android:backgroundTint="@color/TextFormulario"
+        android:contentDescription="Campo Apellido Materno"/>
+
+    <TextView
+        android:id="@+id/NombresText"
+        android:layout_width="69dp"
+        android:layout_height="37dp"
+        android:layout_above="@+id/FechaText"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="53dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="29dp"
+        android:layout_toStartOf="@+id/NombresEdit"
+        android:text="Nombres : "
+        android:textColor="@color/TextFormulario" />
+
+    <EditText
+
+        android:id="@+id/NombresEdit"
+        android:layout_width="203dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextFecha"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/edittext"
+        android:backgroundTint="@color/TextFormulario"
+        android:contentDescription="Campo Nombres"/>
+
+
+    <TextView
+        android:id="@+id/FechaText"
+        android:layout_width="140dp"
+        android:layout_height="34dp"
+        android:layout_above="@+id/ColegioProcedenciaText"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="27dp"
+        android:layout_toStartOf="@+id/editTextFecha"
+        android:text="Fecha de Nacimiento: "
+        android:textColor="@color/TextFormulario" />
+
+    <EditText
+        android:id="@+id/editTextFecha"
+        android:layout_width="199dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ColegioProcedenciaEdit"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="45dp"
+        android:background="@drawable/edittext"
+        android:backgroundTint="@color/TextFormulario"
+        android:contentDescription="Campo Fecha de Nacimiento"/>
+
+    <TextView
+        android:id="@+id/ColegioProcedenciaText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/CarreraPostulaText"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="56dp"
+        android:layout_toStartOf="@+id/ColegioProcedenciaEdit"
+        android:text="Colegio Procedencia : "
+        android:textColor="@color/TextFormulario" />
+
+    <EditText
+        android:id="@+id/ColegioProcedenciaEdit"
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/CarreraPostulaEdit"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/edittext"
+        android:backgroundTint="@color/TextFormulario"
+        android:contentDescription="Campo Colegio de Procedencia"></EditText>
+    <TextView
+        android:id="@+id/CarreraPostulaText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonGuardar"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="54dp"
+        android:layout_toStartOf="@+id/CarreraPostulaEdit"
+
+        android:text="Carrera que postula : "
+        android:textColor="@color/TextFormulario" />
+
+    <EditText
+        android:id="@+id/CarreraPostulaEdit"
+        android:layout_width="202dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonGuardar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="46dp"
+        android:background="@drawable/edittext"
+        android:backgroundTint="@color/TextFormulario"
+        android:contentDescription="Campo Carrera que Postula"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="275dp"
+        android:layout_height="132dp"
+        android:layout_above="@+id/Titulo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="71dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="8dp"
+        app:srcCompat="@drawable/perfil2" />
+
+
+    <Button
+        android:id="@+id/buttonGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="165dp"
+        android:layout_marginBottom="35dp"
+        android:backgroundTint="#36C9C6"
+        android:text="Guardar" />
+
+
+</RelativeLayout>
