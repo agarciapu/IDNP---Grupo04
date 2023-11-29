@@ -1,0 +1,70 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/degradable_background"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="194dp"
+        android:layout_height="211dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="64dp"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="64dp"
+        android:text="Usuario"
+        android:textColor="@color/TextFormulario"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/idUsuario"
+        android:layout_width="203dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edittext"
+        android:backgroundTint="@color/TextFormulario"
+        android:contentDescription="Campo usuario" />
+
+    <TextView
+        android:id="@+id/textConstrasenia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:text="Contraseña"
+        android:textColor="@color/TextFormulario"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/idContrasenia"
+        android:layout_width="203dp"
+        android:inputType="textPassword"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edittext"
+        android:backgroundTint="@color/TextFormulario"
+        android:contentDescription="Campo contraseña" />
+
+    <ImageButton
+        android:id="@+id/buttonIngresar"
+        android:layout_width="240dp"
+        android:layout_height="38dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#36C9C6"
+        android:src="@drawable/person_icon"
+        android:contentDescription="Botón Ingresar" />
+
+</LinearLayout>
