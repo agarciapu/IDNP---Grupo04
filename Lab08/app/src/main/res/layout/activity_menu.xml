@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/degradable_background"
+    tools:context=".Activity_Menu">
+
+    <Button
+        android:id="@+id/buttonNuevoPostulante"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="111dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="424dp"
+        android:background="@drawable/buttonmenu"
+        android:text="Nuevo Postulante" />
+
+    <Button
+        android:id="@+id/buttonInfoPostulante"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="105dp"
+        android:layout_marginEnd="98dp"
+        android:layout_marginBottom="355dp"
+        android:background="@drawable/buttonmenu"
+        android:text="Info Postulante" />
+
+    <TextView
+        android:id="@+id/textTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonNuevoPostulante"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="87dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="41dp"
+        android:text="Seleccione una opción"
+        android:textColor="@color/TextFormulario"
+        android:textSize="24sp" />
+
+
+
+</RelativeLayout>
